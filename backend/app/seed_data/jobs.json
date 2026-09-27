@@ -1,0 +1,315 @@
+[
+  {
+    "job_id": "4bc29fbc-6450-4f37-b440-95e70e915a7d",
+    "platform": "boss",
+    "title": "Python后端开发工程师",
+    "company": "字节跳动",
+    "salary_min": 20000,
+    "salary_max": 40000,
+    "city": "北京",
+    "city_tier": 1,
+    "industry": "互联网",
+    "company_size": "10000人以上",
+    "level": "初级",
+    "skills_required": [
+      "Python",
+      "Go",
+      "MySQL",
+      "Redis",
+      "Docker",
+      "Kafka",
+      "微服务"
+    ],
+    "jd_text": "岗位职责：\n1. 负责公司核心业务系统的后端开发与维护\n2. 参与系统架构设计，保证系统高可用、高并发\n3. 编写高质量代码，进行代码评审\n4. 与产品、前端团队紧密协作\n\n任职要求：\n1. 计算机相关专业本科及以上学历\n2. 熟练掌握Python/Go，熟悉常用数据结构和算法\n3. 熟悉MySQL、Redis等数据库\n4. 了解分布式系统、消息队列等中间件\n5. 有良好的编码习惯和团队协作能力\n6. 对技术有热情，喜欢钻研新技术",
+    "radar_json": {
+      "技能": 0.7,
+      "行业": 1.0,
+      "薪资": 1.0,
+      "地域": 1.0,
+      "成长": 0.7,
+      "兴趣": 0.7
+    },
+    "salary_score": 1.0
+  },
+  {
+    "job_id": "a3ded82c-b1bc-4c14-bbfd-80635ed232cb",
+    "platform": "boss",
+    "title": "AI算法工程师（应届生）",
+    "company": "腾讯",
+    "salary_min": 25000,
+    "salary_max": 45000,
+    "city": "深圳",
+    "city_tier": 1,
+    "industry": "AI",
+    "company_size": "10000人以上",
+    "level": "初级",
+    "skills_required": [
+      "Python",
+      "PyTorch",
+      "TensorFlow",
+      "NLP",
+      "机器学习",
+      "深度学习"
+    ],
+    "jd_text": "岗位职责：\n1. 参与AI产品的算法研发与优化\n2. 负责自然语言处理相关模型训练与部署\n3. 跟踪前沿技术，推动技术创新\n4. 撰写技术文档，参与技术分享\n\n任职要求：\n1. 计算机/AI相关专业硕士及以上学历\n2. 扎实的机器学习、深度学习基础\n3. 熟练使用Python，熟悉PyTorch/TensorFlow\n4. 有NLP/CV相关项目经验优先\n5. 良好的英文论文阅读能力",
+    "radar_json": {
+      "技能": 0.6,
+      "行业": 1.0,
+      "薪资": 1.0,
+      "地域": 1.0,
+      "成长": 0.7,
+      "兴趣": 0.7
+    },
+    "salary_score": 1.0
+  },
+  {
+    "job_id": "5ad1fd30-e057-43d9-8b3b-74fbdf476157",
+    "platform": "智联",
+    "title": "Java开发工程师",
+    "company": "美团",
+    "salary_min": 18000,
+    "salary_max": 30000,
+    "city": "北京",
+    "city_tier": 1,
+    "industry": "互联网",
+    "company_size": "10000人以上",
+    "level": "初级",
+    "skills_required": [
+      "Java",
+      "Spring Boot",
+      "MySQL",
+      "Redis",
+      "消息队列",
+      "微服务"
+    ],
+    "jd_text": "岗位职责：\n1. 参与美团到家业务后端系统开发\n2. 负责核心功能模块的设计与实现\n3. 持续优化系统性能和稳定性\n4. 参与技术方案评审\n\n任职要求：\n1. 计算机相关专业本科及以上\n2. 扎实的Java基础，熟悉Spring框架\n3. 熟悉MySQL、Redis等常用中间件\n4. 了解分布式系统设计原则\n5. 良好的沟通协作能力",
+    "radar_json": {
+      "技能": 0.6,
+      "行业": 1.0,
+      "薪资": 0.96,
+      "地域": 1.0,
+      "成长": 0.7,
+      "兴趣": 0.7
+    },
+    "salary_score": 0.96
+  },
+  {
+    "job_id": "b27f5901-e8f8-406e-b34d-0be1803266ea",
+    "platform": "boss",
+    "title": "前端开发工程师（React）",
+    "company": "快手",
+    "salary_min": 18000,
+    "salary_max": 35000,
+    "city": "北京",
+    "city_tier": 1,
+    "industry": "互联网",
+    "company_size": "10000人以上",
+    "level": "初级",
+    "skills_required": [
+      "JavaScript",
+      "React",
+      "TypeScript",
+      "CSS",
+      "Webpack",
+      "Node.js"
+    ],
+    "jd_text": "岗位职责：\n1. 负责快手主站前端功能开发\n2. 参与前端基础设施建设\n3. 优化页面性能和用户体验\n4. 与设计、后端团队协作\n\n任职要求：\n1. 计算机相关专业本科及以上\n2. 熟练掌握JavaScript/TypeScript\n3. 熟悉React框架及其生态\n4. 了解前端工程化，有Webpack/Vite使用经验\n5. 对用户体验有追求",
+    "radar_json": {
+      "技能": 0.6,
+      "行业": 1.0,
+      "薪资": 1.0,
+      "地域": 1.0,
+      "成长": 0.7,
+      "兴趣": 0.7
+    },
+    "salary_score": 1.0
+  },
+  {
+    "job_id": "0d22bca3-e39f-40bc-899e-d430b4dce184",
+    "platform": "猎聘",
+    "title": "数据开发工程师",
+    "company": "阿里巴巴",
+    "salary_min": 20000,
+    "salary_max": 35000,
+    "city": "杭州",
+    "city_tier": 2,
+    "industry": "互联网",
+    "company_size": "10000人以上",
+    "level": "初级",
+    "skills_required": [
+      "SQL",
+      "Python",
+      "Spark",
+      "Hadoop",
+      "数据仓库",
+      "ETL"
+    ],
+    "jd_text": "岗位职责：\n1. 负责数据仓库建设与维护\n2. 开发ETL流程，保障数据质量\n3. 参与数据产品研发\n4. 数据分析和可视化\n\n任职要求：\n1. 计算机/统计相关专业本科及以上\n2. 熟练掌握SQL，有Python编程能力\n3. 了解大数据技术栈（Spark/Hadoop）\n4. 有数据仓库建模经验优先\n5. 逻辑清晰，善于沟通",
+    "radar_json": {
+      "技能": 0.6,
+      "行业": 1.0,
+      "薪资": 1.0,
+      "地域": 0.8,
+      "成长": 0.7,
+      "兴趣": 0.7
+    },
+    "salary_score": 1.0
+  },
+  {
+    "job_id": "cf738bd1-d118-43a5-b7ba-141b05f48c71",
+    "platform": "boss",
+    "title": "运维开发工程师",
+    "company": "网易",
+    "salary_min": 15000,
+    "salary_max": 25000,
+    "city": "广州",
+    "city_tier": 1,
+    "industry": "互联网",
+    "company_size": "1000-9999人",
+    "level": "初级",
+    "skills_required": [
+      "Linux",
+      "Python",
+      "Docker",
+      "Kubernetes",
+      "CI/CD",
+      "监控"
+    ],
+    "jd_text": "岗位职责：\n1. 负责线上服务的运维保障\n2. 开发自动化运维工具\n3. 参与容器化平台建设\n4. 故障排查与性能优化\n\n任职要求：\n1. 计算机相关专业本科及以上\n2. 熟悉Linux系统管理\n3. 掌握Python/Shell脚本编程\n4. 了解Docker/K8s容器技术\n5. 有责任心，抗压能力强",
+    "radar_json": {
+      "技能": 0.6,
+      "行业": 1.0,
+      "薪资": 0.8,
+      "地域": 1.0,
+      "成长": 0.7,
+      "兴趣": 0.7
+    },
+    "salary_score": 0.8
+  },
+  {
+    "job_id": "9f73b090-cfd0-4556-9674-4d2493aa1919",
+    "platform": "boss",
+    "title": "Golang后端开发",
+    "company": "小红书",
+    "salary_min": 22000,
+    "salary_max": 40000,
+    "city": "上海",
+    "city_tier": 1,
+    "industry": "互联网",
+    "company_size": "1000-9999人",
+    "level": "初级",
+    "skills_required": [
+      "Go",
+      "Python",
+      "MySQL",
+      "Redis",
+      "微服务",
+      "Kafka",
+      "Docker"
+    ],
+    "jd_text": "岗位职责：\n1. 负责小红书社区后端服务开发\n2. 参与微服务架构设计与实现\n3. 保障系统高可用和高性能\n4. Code Review和技术分享\n\n任职要求：\n1. 计算机相关专业本科及以上\n2. 熟练掌握Go语言，了解Python\n3. 熟悉MySQL、Redis等数据库\n4. 有微服务开发经验\n5. 热爱技术，喜欢挑战",
+    "radar_json": {
+      "技能": 0.7,
+      "行业": 1.0,
+      "薪资": 1.0,
+      "地域": 1.0,
+      "成长": 0.7,
+      "兴趣": 0.7
+    },
+    "salary_score": 1.0
+  },
+  {
+    "job_id": "9df3b32a-3aff-43d1-844a-cf43d3bb1150",
+    "platform": "智联",
+    "title": "测试开发工程师",
+    "company": "百度",
+    "salary_min": 18000,
+    "salary_max": 30000,
+    "city": "北京",
+    "city_tier": 1,
+    "industry": "互联网",
+    "company_size": "10000人以上",
+    "level": "初级",
+    "skills_required": [
+      "Python",
+      "Java",
+      "Selenium",
+      "自动化测试",
+      "CI/CD",
+      "Linux"
+    ],
+    "jd_text": "岗位职责：\n1. 负责产品质量保障，制定测试方案\n2. 开发自动化测试框架和工具\n3. 参与CI/CD流水线建设\n4. 性能测试和压力测试\n\n任职要求：\n1. 计算机相关专业本科及以上\n2. 熟悉Python/Java编程\n3. 了解自动化测试框架\n4. 有良好的逻辑思维能力\n5. 细心负责，善于发现bug",
+    "radar_json": {
+      "技能": 0.6,
+      "行业": 1.0,
+      "薪资": 0.96,
+      "地域": 1.0,
+      "成长": 0.7,
+      "兴趣": 0.7
+    },
+    "salary_score": 0.96
+  },
+  {
+    "job_id": "e78d7001-7aef-4cde-b1a4-744760086ea1",
+    "platform": "boss",
+    "title": "产品经理（技术方向）",
+    "company": "京东",
+    "salary_min": 18000,
+    "salary_max": 28000,
+    "city": "北京",
+    "city_tier": 1,
+    "industry": "互联网",
+    "company_size": "10000人以上",
+    "level": "初级",
+    "skills_required": [
+      "产品设计",
+      "数据分析",
+      "SQL",
+      "Axure",
+      "需求分析",
+      "项目管理"
+    ],
+    "jd_text": "岗位职责：\n1. 负责电商平台产品功能规划\n2. 进行用户需求调研和分析\n3. 撰写PRD文档，跟进开发进度\n4. 数据驱动的产品迭代优化\n\n任职要求：\n1. 本科及以上学历，计算机相关专业优先\n2. 有技术背景，了解基本开发流程\n3. 逻辑清晰，善于沟通表达\n4. 对电商行业有兴趣\n5. 有产品实习经验优先",
+    "radar_json": {
+      "技能": 0.6,
+      "行业": 1.0,
+      "薪资": 0.92,
+      "地域": 1.0,
+      "成长": 0.7,
+      "兴趣": 0.7
+    },
+    "salary_score": 0.92
+  },
+  {
+    "job_id": "54d59232-d366-4e6d-96cf-66e393ae2a9a",
+    "platform": "猎聘",
+    "title": "全栈开发工程师",
+    "company": "Shopee",
+    "salary_min": 20000,
+    "salary_max": 35000,
+    "city": "深圳",
+    "city_tier": 1,
+    "industry": "互联网",
+    "company_size": "5000-9999人",
+    "level": "初级",
+    "skills_required": [
+      "Python",
+      "JavaScript",
+      "React",
+      "MySQL",
+      "Redis",
+      "Docker",
+      "AWS"
+    ],
+    "jd_text": "岗位职责：\n1. 负责跨境电商平台前后端开发\n2. 参与系统架构设计\n3. 编写单元测试和集成测试\n4. 与海外团队协作\n\n任职要求：\n1. 计算机相关专业本科及以上\n2. 熟悉Python/JavaScript\n3. 了解React或Vue前端框架\n4. 英语读写能力良好\n5. 有全栈项目经验优先",
+    "radar_json": {
+      "技能": 0.7,
+      "行业": 1.0,
+      "薪资": 1.0,
+      "地域": 1.0,
+      "成长": 0.56,
+      "兴趣": 0.7
+    },
+    "salary_score": 1.0
+  }
+]

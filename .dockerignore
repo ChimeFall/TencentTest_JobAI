@@ -1,0 +1,11 @@
+# .dockerignore
+node_modules/
+frontend/node_modules/
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env.local
+uploads/
+*.db
+.git/

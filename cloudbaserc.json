@@ -1,0 +1,6 @@
+{
+  "envId": "tencenttest-jobai-d1dx907e0c6eca",
+  "cloudrun": {
+    "name": "offer-catcher-api"
+  }
+}
