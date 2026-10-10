@@ -1,0 +1,27 @@
+# 依赖与构建产物
+node_modules/
+dist/
+__pycache__/
+*.pyc
+
+# 敏感信息
+.env
+.env.*
+!.env.example
+cookies.txt
+headers.txt
+
+# 数据与上传文件（含用户简历）
+backend/offer_catcher.db
+backend/uploads/
+
+# 大体积演示视频（GitHub 不适合存放，可另行发布 Release 或网盘）
+*.mp4
+
+# 系统/编辑器
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.codebuddy/
+.deploy_trigger
