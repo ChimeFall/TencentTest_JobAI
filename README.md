@@ -1,60 +1,90 @@
-# Offer捕手
+# Offer捕手：学生求职匹配智能体
 
-腾讯 AI-HR 培训生线上实战营项目，使用CodeBuddy进行编写。给学生用的 AI 求职匹配小工具。上传简历 PDF，聊几句求职意向，系统算出一批岗位的匹配度，还能针对具体岗位给简历改写建议（ATS 模拟）。
+腾讯 AI-HR 培训生线上实战营项目，使用CodeBuddy进行编写。
 
-做这个项目主要是因为秋招的时候投简历全靠感觉，想试试能不能把"我和这个岗位合不合适"这件事量化一下。匹配算法是自己琢磨的六维重叠法，谈不上多科学，但跑下来结果基本符合直觉，具体见 [PROJECT_WIKI.md](./PROJECT_WIKI.md)。
+面向高校学生的端到端 AI 求职匹配系统：上传简历 PDF，通过对话式交互采集求职偏好，基于六维重叠算法计算岗位匹配度，并针对具体岗位提供 ATS 模拟评分与逐条简历改写建议。
 
 演示视频：https://www.bilibili.com/video/BV1MPbk6kERS
 
-## 怎么跑起来
+## 功能特性
 
-需要 Python 3.10+ 和 Node 18+。
+- **简历智能解析**：上传 PDF，服务端本地提取文本（pdfplumber），DeepSeek 结构化为教育经历、技能、实习经历等字段，展示层自动脱敏
+- **对话式偏好采集**：状态机驱动（权重排序 → 城市/薪资/行业选择 → 自由补充），结构化组件与自由输入结合
+- **六维岗位匹配**：技能 / 行业 / 薪资 / 地域 / 成长 / 兴趣六维重叠算法，输出匹配百分比、双雷达图与逐维明细
+- **兴趣关键词加成**：从用户补充信息中提取方向关键词，命中岗位时匹配度加权（每词 +2.5%，上限 15%）
+- **ATS 简历优化**：模拟企业 ATS 筛选，给出通过率预估、关键词命中/缺失分析和逐条改写建议
+- **隐私安全**：PDF 二进制不落库，Cookie 匿名会话（24 小时过期），无需注册
+
+## 技术栈
+
+| 层 | 技术 |
+|---|---|
+| 前端 | React 18 + Vite 5 + TDesign React + React Router 6 + Recharts |
+| 后端 | FastAPI + Uvicorn + pdfplumber |
+| AI | DeepSeek API（deepseek-chat） |
+| 数据库 | SQLite（默认）/ MySQL / PostgreSQL，按 `DATABASE_URL` 自动切换 |
+| 部署 | 腾讯云 CloudBase（静态托管 + CloudRun）/ Docker |
+
+## 快速开始
+
+环境要求：Python 3.10+，Node.js 18+。
+
+**1. 配置 API 密钥**
+
+创建 `backend/.env`：
+
+```
+DEEPSEEK_API_KEY=你的密钥
+```
+
+**2. 启动后端**
 
 ```bash
-# 后端
 cd backend
 pip install -r requirements.txt
 uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+```
 
-# 前端（另开一个终端）
+**3. 启动前端**（另开终端）
+
+```bash
 cd frontend
 npm install
 npm run dev
 ```
 
-打开 http://localhost:5173 ，API 文档在 http://localhost:8000/docs 。Windows 下也可以直接双击根目录的 `start.bat`，两件事一起干。
+**4. 访问**
 
-需要先在 `backend/.env` 里填 DeepSeek 的 key：
+| 入口 | 地址 |
+|---|---|
+| 前端页面 | http://localhost:5173 |
+| 后端 API | http://localhost:8000 |
+| Swagger 文档 | http://localhost:8000/docs |
 
-```
-DEEPSEEK_API_KEY=你的key
-```
+Windows 下可直接运行根目录 `start.bat` 同时启动前后端。首次启动自动初始化种子岗位数据。
 
-没有 key 的话上传简历这步会失败，匹配算法本身不依赖 AI，可以先拿种子数据逛一逛。
-
-## 技术选型
-
-前端 React + Vite + TDesign，后端 FastAPI，数据库默认 SQLite（想接 MySQL/PostgreSQL 改 `DATABASE_URL` 就行）。简历解析用的 pdfplumber，文本在服务端内存里提取，原始 PDF 不落库——简历这东西还是别到处存比较好。
-
-部署用的是腾讯云 CloudBase（静态托管 + CloudRun），细节在 [deploy.md](./deploy.md)。也留了 Dockerfile 可以一把梭：
+## Docker 部署
 
 ```bash
 docker build -t offer-catcher .
 docker run -p 8000:8000 -e DEEPSEEK_API_KEY=xxx offer-catcher
 ```
 
-## 已知的问题
+## 项目结构
 
-- CloudRun 上 SQLite 随容器重启丢数据，目前靠启动时重新灌种子数据顶着，正经用得换 MySQL
-- 会话靠 Cookie，24 小时过期，没有账号体系（故意的，不想收集信息）
-- 岗位数据是种子数据 + 手工导入的 100 条，没有接真实招聘网站的 API
-- 雷达图导出 PDF 在某些长 JD 下会截断
+- `frontend/`：React 前端，四个页面（上传 → 对话 → 结果 → 优化）
+- `backend/`：FastAPI 后端，`routers/` 为接口层，`services/` 为匹配算法与 AI 封装
+- `Dockerfile`：一体式镜像（前端构建产物由后端托管）
+- `jobs_100.json` + `_insert_jobs.py`：岗位数据与导入脚本
 
-## 目录速览
+## 文档（Word 版）
 
-```
-frontend/   React 前端，四个页面：上传 → 对话 → 结果 → 优化
-backend/    FastAPI 后端，routers 是接口，services 里是匹配算法和 DeepSeek 封装
-deploy.md   CloudBase 部署记录
-PROJECT_WIKI.md  算法和接口的详细说明
-```
+- [README.docx](./README.docx)：本自述文件的 Word 版
+- [PROJECT_WIKI.docx](./PROJECT_WIKI.docx)：技术 Wiki——架构、API、数据库、匹配算法详解
+- [Offer捕手学生求职匹配智能体设计文档.docx](./Offer捕手学生求职匹配智能体设计文档.docx)：设计文档
+
+## 已知限制
+
+- CloudRun 上 SQLite 数据随容器重启丢失，生产环境建议切换 MySQL
+- 岗位数据为预置种子数据，未接入实时招聘平台
+- 雷达图导出 PDF 在长文本场景下可能截断
