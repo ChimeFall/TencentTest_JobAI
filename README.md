@@ -79,7 +79,6 @@ docker run -p 8000:8000 -e DEEPSEEK_API_KEY=xxx offer-catcher
 
 ## 文档（Word 版）
 
-- [README.docx](./README.docx)：本自述文件的 Word 版
 - [PROJECT_WIKI.docx](./PROJECT_WIKI.docx)：技术 Wiki——架构、API、数据库、匹配算法详解
 - [Offer捕手学生求职匹配智能体设计文档.docx](./Offer捕手学生求职匹配智能体设计文档.docx)：设计文档
 
