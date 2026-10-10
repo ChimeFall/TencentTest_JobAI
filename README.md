@@ -77,7 +77,7 @@ docker run -p 8000:8000 -e DEEPSEEK_API_KEY=xxx offer-catcher
 - `Dockerfile`：一体式镜像（前端构建产物由后端托管）
 - `jobs_100.json` + `_insert_jobs.py`：岗位数据与导入脚本
 
-## 文档（Word 版）
+## 文档
 
 - [PROJECT_WIKI.docx](./PROJECT_WIKI.docx)：技术 Wiki——架构、API、数据库、匹配算法详解
 - [Offer捕手学生求职匹配智能体设计文档.docx](./Offer捕手学生求职匹配智能体设计文档.docx)：设计文档
